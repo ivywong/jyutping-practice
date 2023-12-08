@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jyutping-practice"
+version = "0.0.1"
+authors = [
+  { name="Ivy Wong", email="ivy@ivywong.dev" },
+]
+description = "A CLI app for drilling Jyutping"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "LICENSE"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "playaudio"
+]
+
+[project.urls]
+Homepage = "https://github.com/ivywong/jyutping-practice"
+Issues = "https://github.com/ivywong/jyutping-practice/issues"
+
+[project.scripts]
+jyutpingpractice = "jyutpingpractice.main:main"
+
+[tool.setuptools.package-data]
+"jyutpingpractice.assets.sounds" = ["*.mp3", "*.sqlite"]
