@@ -10,7 +10,7 @@ authors = [
 ]
 description = "A CLI app for drilling Jyutping"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.8"
 license = {text = "LICENSE"}
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -19,7 +19,6 @@ classifiers = [
 ]
 dependencies = [
     "playsound",
-    "PyObjC",
     "importlib_resources"
 ]
 

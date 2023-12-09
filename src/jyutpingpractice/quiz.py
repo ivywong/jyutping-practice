@@ -1,7 +1,6 @@
 from enum import Enum
 import curses
 import random
-from time import sleep
 
 from .utils import get_user_choice, play_audio, get_matching_audio, get_random_audio
 
