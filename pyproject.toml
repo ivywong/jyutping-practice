@@ -10,7 +10,7 @@ authors = [
 ]
 description = "A CLI app for drilling Jyutping"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 license = {text = "LICENSE"}
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -18,7 +18,9 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 dependencies = [
-    "playaudio"
+    "playsound",
+    "PyObjC",
+    "importlib_resources"
 ]
 
 [project.urls]
@@ -29,4 +31,4 @@ Issues = "https://github.com/ivywong/jyutping-practice/issues"
 jyutpingpractice = "jyutpingpractice.main:main"
 
 [tool.setuptools.package-data]
-"jyutpingpractice.assets.sounds" = ["*.mp3", "*.sqlite"]
+"jyutpingpractice.assets.syllables" = ["*.mp3"]
